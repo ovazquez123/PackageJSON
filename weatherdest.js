@@ -46,7 +46,7 @@ geocoder.geocode(address, function(err, data) {
     }
 
     if (addressComponents[i].types[0] === "locality") {
-      city = addressComponents[i].types[0];
+      city = addressComponents[i].short_name;
     }
   }
 
